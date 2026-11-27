@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TokenToAPI/TokenToAPI-connect.git"
+    "url": "https://github.com/OverdogLab/TokenToAPI-connect.git"
   },
-  "homepage": "https://github.com/TokenToAPI/TokenToAPI-connect",
-  "bugs": "https://github.com/TokenToAPI/TokenToAPI-connect/issues",
+  "homepage": "https://github.com/OverdogLab/TokenToAPI-connect",
+  "bugs": "https://github.com/OverdogLab/TokenToAPI-connect/issues",
   "scripts": {
     "dev": "tauri dev",
     "dev:web": "vite --host 127.0.0.1",

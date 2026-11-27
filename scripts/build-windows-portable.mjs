@@ -95,9 +95,9 @@ WSL and remote development environments have their own configuration and must be
 Keep the extracted folder in a permanent location. If you move it, open the EXE once again before using platform imports.
 The app does not stay resident after closing. Configuration and restore records are stored in the current user directory; deleting the EXE does not restore the configuration automatically.
 ${process.platform === 'win32' ? 'This package was built on Windows.' : 'This package was cross-compiled on another system.'}Test scope:
-https://github.com/TokenToAPI/TokenToAPI-connect/blob/main/VERIFICATION.md
+https://github.com/OverdogLab/TokenToAPI-connect/blob/main/VERIFICATION.md
 
-Source & license: https://github.com/TokenToAPI/TokenToAPI-connect
+Source & license: https://github.com/OverdogLab/TokenToAPI-connect
 `;
   // ASCII filenames also extract correctly in older Windows ZIP tools; write the file as UTF-8 with a BOM.
   fs.writeFileSync(path.join(folder, 'README.txt'), '\ufeff' + instructions.replace(/\n/g, '\r\n'));

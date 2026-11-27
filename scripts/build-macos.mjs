@@ -59,8 +59,8 @@ To revert, choose "Use original config" from the gateway list.
 This package uses an ad-hoc signature and has not yet completed Apple Developer ID signing or notarization.
 If the system blocks it, first confirm that you downloaded it from this project's GitHub Release, then follow the system prompt.
 
-Source & docs: https://github.com/TokenToAPI/TokenToAPI-connect
-Latest verification notes: https://github.com/TokenToAPI/TokenToAPI-connect/blob/main/VERIFICATION.md
+Source & docs: https://github.com/OverdogLab/TokenToAPI-connect
+Latest verification notes: https://github.com/OverdogLab/TokenToAPI-connect/blob/main/VERIFICATION.md
 `);
   const name = `TokenToAPI-Connect-${version}-macOS-arm64.zip`;
   const archive = path.join(stage, name);
