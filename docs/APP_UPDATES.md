@@ -6,8 +6,18 @@ network failures stay quiet; a manual check shows a retry message. Downloads
 and installation start only when the user clicks **Update and restart**.
 Import, restore, and other setup operations are disabled during installation.
 
-The endpoint is
-`https://github.com/TokenToAPI/TokenToAPI-connect/releases/latest/download/latest.json`.
+New builds use
+`https://github.com/OverdogLab/TokenToAPI-connect/releases/latest/download/latest.json`.
+
+The signed v0.2.3 packages were first built with the previous update endpoint and
+are published unchanged under OverdogLab. Those installed copies still check the
+[legacy release channel](https://github.com/TokenToAPI/TokenToAPI-connect/releases/latest).
+Keep both channels current until the gateway download resolver and the installed
+update base have moved. For the next version, publish the same signed packages
+and a complete latest.json under both repositories so legacy installs can receive
+a build pointing to OverdogLab. Verify both updater endpoints before marking
+that release Latest.
+
 Tauri verifies the embedded public key and the version in the signed package
 before replacing the app. Older releases are not offered. Configuration and
 backups live outside the application bundle and are preserved.
@@ -69,7 +79,7 @@ The signing key does not replace Apple notarization or Windows publisher signing
 
 On **API Keys**, **Download Connect** links to same-origin gateway routes:
 `/api/v1/connect/download/mac` and `/api/v1/connect/download/windows`.
-The gateway reads the official repository's latest stable release and selects
+During the transition, the live gateway reads the legacy repository's latest stable release. It selects
 its normal `TokenToAPI-Connect-VERSION-macOS-arm64.zip` or
 `TokenToAPI-Connect-VERSION-Windows-x64-setup.exe`. It does not choose updater
 archives, signatures or the Windows portable ZIP. Existing stable aliases are

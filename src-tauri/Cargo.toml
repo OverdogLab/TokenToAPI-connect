@@ -5,7 +5,7 @@ description = "A minimal Claude Code, Codex and Grok API configurator, based on 
 edition = "2021"
 rust-version = "1.90"
 license = "MIT"
-repository = "https://github.com/TokenToAPI/TokenToAPI-connect"
+repository = "https://github.com/OverdogLab/TokenToAPI-connect"
 default-run = "tokentoapi-connect"
 
 [lib]

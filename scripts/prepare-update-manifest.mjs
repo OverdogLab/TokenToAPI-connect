@@ -18,7 +18,7 @@ for (const [target, suffix] of [['darwin-aarch64', 'macOS-arm64.app.tar.gz'], ['
   }
   platforms[target] = {
     signature,
-    url: `https://github.com/TokenToAPI/TokenToAPI-connect/releases/download/v${version}/${filename}`,
+    url: `https://github.com/OverdogLab/TokenToAPI-connect/releases/download/v${version}/${filename}`,
   };
 }
 fs.writeFileSync(path.join(release, 'latest.json'), JSON.stringify({
